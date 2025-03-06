@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import "../styles.css"
 
 function Header() {
     <header className="bg-dark py-5">
