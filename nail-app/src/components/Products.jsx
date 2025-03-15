@@ -13,7 +13,7 @@ const products =[
     {id: 10, name:"#Orange #Short #Square #Spooky" , price: 50.00, image:'./images/red-round-medium.jpg', category: "Short"},
     {id: 11, name:"#Orange #Medium #Floral #Square" , price: 55.00, image:'./images/red-round-medium.jpg', category: "Medium"},
     {id: 12, name:"#Orange #XL #Stilleto" , price: 55.00, image:'./images/red-round-medium.jpg', category: "XL"},
-    {id: 13, name:"#Pink #Short #Square #Floral" , price: 39.99, image:'./images/red-round-medium.jpg', category: "Short"},
+    {id: 13, name:"#Pink #Short #Square #Floral" , price: 39.99, image:'./images/pink-short-floral.jpg', category: "Short"},
     {id: 14, name:"#Pink #Medium #Square #Spooky " , price: 58.75, image:'./images/red-round-medium.jpg', category: "Long"},
     {id: 15, name:"#Pink #Coffin #Long #Winter" , price: 19.99, image:'./images/red-round-medium.jpg', category: "Long"},
     {id: 16, name:"#Pink #Short #Round" , price: 20.00, image:'./images/red-round-medium.jpg', category: "Short"}

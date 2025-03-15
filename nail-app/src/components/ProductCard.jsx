@@ -1,8 +1,8 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 
-function ProductCard {
-    <div class="product col mb-5" data-price="34.99" data-name="#Green #Short #Square">
+function ProductCard() {
+    return (<div className="product col mb-5" data-price="34.99" data-name="#Green #Short #Square">
                 <div class="card h-100">
                     <button id="favoriteButton" class="btn btn-danger position-absolute" type="input" style="top: 0.5rem; right: 0.5rem">
                         <i class="bi bi-heart-fill"></i>
@@ -37,6 +37,7 @@ function ProductCard {
                     </div>
                 </div>
             </div>
+    )
 }
 
 export default ProductCard;
