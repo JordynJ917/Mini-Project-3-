@@ -1,29 +1,20 @@
-import React, { useContext } from "react";
-import { Card, Button } from "react-bootstrap";
-import { useCart } from "../context/ShopContext";
-import Badge from "react-bootstrap/Badge";
+import React from 'react';
+import { useCart } from '../context/ShopContext';
+import products from '../data';
 
+const PopularPage = () => {
+  const { addToCart } = useCart();
 
-const RatingStars = (rating) => {
-    const stars = [];
-    for (let i = 0; i < 5; i++) {
-        if (rating >= i +1){
-            stars.push(<i key={i} className='bi-star-fill'></i>);
-        } else if (rating >= i + 0.5) {
-            stars.push(<i key={i} className="bi-star-half"></i>);
-        } else {
-            stars.push(<i class="bi-star"></i>)
-        }
-    }
-    return stars;
-}
-
-const ProductCard = ({ product }) => {
-  
-    const { addToCart } = useCart();
+  // Filter products with rating 4 or higher
+  const popularProducts = products.filter((product) => product.rating >= 3.5);
 
   return (
-    <Card className="h-100 bg-secondary text-white">
+    <Container>
+      <h2 className='text-center'>Popular Items</h2>
+        <Row className="gx-4 gx-lg-5 justify-content-center">
+          {products.map((product) => (
+            <Col key = {product.id} md={6} lg={4} xl={3} className="mb-5">
+              <Card className="h-100 bg-secondary text-white">
                 {/* Favorite Button */}
                 <Button variant="danger" className="position-absolute" style={{ top: "0.5rem", right: "0.5rem" }}>
                 <i class="bi bi-heart"></i>
@@ -64,7 +55,11 @@ const ProductCard = ({ product }) => {
                   </div>
                 </Card.Footer>
               </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
   );
 };
 
-export default ProductCard;
+export default PopularPage;

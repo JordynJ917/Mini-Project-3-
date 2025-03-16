@@ -3,19 +3,17 @@ const products =[
         id: 1, 
         title:"#Red #Short #Round" , 
         price: 15.99,
-        originalPrice:33.45, 
         image:'./images/red-round-medium.jpg',
         rating: 1,
-        sale: true
+        salePrice:33.45
     },
     {
         id: 2, 
         title:"#Red #Medium #Coffin #Floral" , 
         price: 42.75,
-        originalPrice:54.95, 
         image:'./images/red-short-floral.jpeg',
         rating: 4,
-        sale:true
+        salePrice:54.95 
     },
     {
         id: 3, 
@@ -23,7 +21,7 @@ const products =[
         price: 69.99, 
         image:'./images/red-long-spooky.jpg',
         rating: 4.5,
-        sale: false
+        salePrice: null
     },
     {
         id: 4, 
@@ -31,42 +29,39 @@ const products =[
         price: 35.00, 
         image:'./images/red-winter-coffin.jpg',
         rating: 2,
-        sale: false
+        salePrice: null
     },
     {
         id: 5, 
         title:"#Green #Short #Square" , 
         price: 34.99,
-        originalPrice:45.00, 
-        image:'./images/green-short-square].jpg',
+        image:'./images/green-short-square.jpg',
         rating: 5,
-        sale: true
+        salePrice:45.00 
     },
     {
         id: 6, 
         title:"#Green #Long #Coffin #Floral" ,    
         price: 45.00,
-        originalPrice: 60.00,
         image:'./images/green-floral-coffin.jpg',
         rating: 2.5,
-        sale: true
+        salePrice: 60.00
     },
     {
         id: 7, 
         title:"#Green #Medium #Square #Winter" , 
         price: 18.00,
-        originalPrice: 25.00, 
-        image:'./images/red-round-medium.jpg',
-        rating: 1.5,
-        sale: true
+        image:'./images/green-medium-square-winter.jpg',
+        rating: 1.5,  
+        salePrice: 25.00 
     },
     {
         id: 8, 
         title:"#Green #Square #XL" , 
         price: 70.00, 
-        image:'./images/red-round-medium.jpg',
+        image:'./images/green-xl-square.jpg',
         rating: 3.5,
-        sale: false
+        salePrice: null
     },
     {
         id: 9, 
@@ -74,7 +69,7 @@ const products =[
         price: 66.00, 
         image:'./images/orange-fall-coffin.jpg',
         rating: 5,
-        sale: false
+        salePrice: null
     },
     {
         id: 10, 
@@ -82,7 +77,7 @@ const products =[
         price: 50.00, 
         image:'./images/orange-short-spooky.jpg',
         rating: 5,
-        sale: false
+        salePrice: null
     },
     {
         id: 11, 
@@ -90,16 +85,15 @@ const products =[
         price: 55.00, 
         image: './images/orange-floral-long.jpg',
         rating: 5,
-        sale: false
+        salePrice: null
     },
     {
         id: 12, 
         title:"#Orange #XL #Stilleto" , 
         price: 55.00,
-        originalPrice:70.00,
-        image:'./images/red-round-medium.jpg',
+        image:'./images/orange-xl-stilleto.jpg',
         rating: 0.5,
-        sale: true
+        salePrice:70.00
     },
     {
         id: 13, 
@@ -107,24 +101,23 @@ const products =[
         price: 39.99, 
         image:'./images/pink-short-floral.jpg',
         rating: 5,
-        sale: false
+        salePrice: null
     },
     {
         id: 14, 
         title:"#Pink #Medium #Square #Spooky " , 
         price: 58.75, 
-        image:'./images/red-round-medium.jpg',
+        image:'./images/pink-medium-square-spooky.jpg',
         rating: 4,
-        sale: false
+        salePrice: null
     },
     {
         id: 15, 
         title:"#Pink #Coffin #Long #Winter" , 
         price: 19.99,
-        originalPrice: 29.99, 
         image:'./images/pink-coffin-winter.jpg',
         rating: 2,
-        sale: true
+        salePrice: 29.99,
     },
     {
         id: 16, 
@@ -132,6 +125,8 @@ const products =[
         price: 20.00, 
         image:'./images/pink-short-round.jpg',
         rating: 4.5,
-        sale: false
+        salePrice: null
     }
 ];
+
+export default products
